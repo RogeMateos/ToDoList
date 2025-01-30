@@ -1,7 +1,7 @@
 // src/components/TodoItem.jsx
 import React from 'react';
 
-export const TodoItem = ({ todo }) => {
+export const TodoItem = ({ todo,onDeleteTodo }) => {
   return (
     <li className="list-group-item d-flex justify-content-between">
       <span className="align-self-center">
@@ -9,7 +9,7 @@ export const TodoItem = ({ todo }) => {
       </span>
       <button 
         className="btn btn-danger"
-        onClick={() => console.log('Delete clicked:', todo.id)}
+        onClick={() => onDeleteTodo(todo.id)}
       >
         Borrar
       </button>
