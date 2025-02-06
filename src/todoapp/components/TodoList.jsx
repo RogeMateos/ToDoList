@@ -12,6 +12,7 @@ export const TodoList = ({ todos = [] ,onDeleteTodo, onToggleTodo }) => {
               key={todo.id} 
               todo={todo} 
               onDeleteTodo={onDeleteTodo}  // Pasar la funciĆ³n como prop
+              onToggleTodo={onToggleTodo}
             />
           ))
         }
